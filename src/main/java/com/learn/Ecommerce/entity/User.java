@@ -14,13 +14,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-@Data
+@Entity //to create table
+@Data // to generat getar setar
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
 	
-	@Id
+	@Id // use for primary key
 	private String id;
 	@Column(nullable = false)
 	private String firstName;
